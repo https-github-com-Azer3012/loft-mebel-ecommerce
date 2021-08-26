@@ -1,0 +1,12 @@
+.user-bar{
+    a{
+        text-decoration: none;  
+        cursor: pointer;
+        &:last-child{
+            margin-left: 30px;
+        }
+        img{
+
+        }
+    }
+}
