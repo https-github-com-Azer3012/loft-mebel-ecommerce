@@ -1,15 +1,23 @@
+import Categories from "./pages/Categories";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeaderSection from "./pages/Header-section";
+import Carousel from "./components/Carousel";
 
 
 
 function App() {
   return (
     <div className="App">
-        <Header/>
+      <Header/>
+      <div className="homepage">
         <HeaderSection/>
-        <Footer/>
+        <Categories/>
+        <Carousel/>   
+      </div>
+
+      <Footer/>
+       
     </div>
   );
 }
