@@ -13,7 +13,7 @@ function Categories() {
       .then((res) => setCategories(res.data));
   }, []);
 
-  console.log(categories);
+ 
   return (
     <div className="category-section">
       <ul className="categories">
