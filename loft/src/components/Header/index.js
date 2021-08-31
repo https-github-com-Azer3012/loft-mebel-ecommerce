@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.scss";
-import { Link } from "react-router-dom";
 import PhoneIcon from "../../assets/phone.png";
 function Header() {
   return (

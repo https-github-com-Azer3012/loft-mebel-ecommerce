@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeaderSection from "./pages/Header-section";
 import Carousel from "./components/Carousel";
+import AllProducts from "./pages/AllProducts";
 
 
 
@@ -13,7 +14,8 @@ function App() {
       <div className="homepage">
         <HeaderSection/>
         <Categories/>
-        <Carousel/>   
+        <Carousel/> 
+        <AllProducts/>  
       </div>
 
       <Footer/>
