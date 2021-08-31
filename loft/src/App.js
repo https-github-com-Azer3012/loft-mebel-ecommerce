@@ -2,35 +2,21 @@ import Categories from "./pages/Categories";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeaderSection from "./pages/Header-section";
-import Carousel from "./components/Carousel";
-import AllProducts from "./pages/AllProducts";
-import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      
-      <div className="homepage">
-        <HeaderSection/>
-        <Categories/>
-        <Carousel/>
+      <Header />
 
-        <Router>
-          <Switch>
-            <Route patch="/" component={AllProducts}/>
-          </Switch>
-        </Router>
-        
-        
-        
-       
+      <div className="homepage">
+        <HeaderSection />
+        <Categories />
       </div>
 
-      <Footer/>
-       
+      <Contact />
+
+      <Footer />
     </div>
   );
 }
