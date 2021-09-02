@@ -1,8 +1,14 @@
 import React from "react";
-import Contact from "../../components/Contact";
+import Contact from "../../components/Contact/ContactForm";
+import ContactMap from "../../components/Contact/CompanyMap";
 
 function index() {
-  return <Contact />;
+  return (
+    <>
+      <Contact />
+      <ContactMap />
+    </>
+  );
 }
 
 export default index;
