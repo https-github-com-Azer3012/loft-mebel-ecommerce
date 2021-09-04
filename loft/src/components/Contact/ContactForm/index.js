@@ -16,22 +16,22 @@ function index() {
           <form className="contactForm">
             <div className="nameAndEmailSections">
               <div className="inputName">
-                <label for="name">Adınız</label>
+                <label htmlFor="name">Adınız</label>
                 <input type="text" id="name" name="name" required />
               </div>
 
               <div className="inputName">
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input type="email" id="email" required />
               </div>
             </div>
 
             <div className="textarea">
-              <label for="message">Mesaj daxil edin</label>
+              <label htmlFor="message">Mesaj daxil edin</label>
               <textarea
                 id="message"
                 name="message"
-                maxlength="512"
+                maxLength="512"
                 required
                 rows="7"
                 cols="58"
