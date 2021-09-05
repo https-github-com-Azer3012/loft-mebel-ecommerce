@@ -5,38 +5,35 @@ import HeaderSection from "./pages/Header-section";
 import Carousel from "./components/Carousel";
 import AllProducts from "./pages/AllProducts";
 import Contact from "./pages/Contact";
-import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-
+import Basket from "./pages/Basket-page";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <Header/>
-      
-      <div className="homepage">
-        <HeaderSection/>
-        <Categories/>
-        
+      <Header />
 
-        <Router>
-          <Switch>
-            <Route exact path='/'>
-              <Carousel/>
-              <AllProducts/>
-            </Route>
-            <Route exact path="/contact" component={Contact}/>
-          </Switch>
-        </Router>
-        
-        
-        
+      <div className="homepage">
+        <HeaderSection />
+        <Categories />
+
        
+          <Switch>
+            <Route exact path="/">
+              <Carousel />
+              <AllProducts />
+            </Route>
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/basket" component={Basket} />
+          </Switch>
+        
       </div>
 
-      <Footer/>
-       
+      
+      <Footer />
     </div>
+    </Router>
   );
 }
 
