@@ -4,6 +4,7 @@ import FooterLogo from "../../assets/footer.png";
 import instagram from "../../assets/inst.png";
 import envelope from "../../assets/mail.png";
 import phone from "../../assets/phone.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -12,36 +13,36 @@ function Footer() {
         <h3>Naviqasiya</h3>
         <ul>
           <li>
-            <a>Mətbəx mebeli</a>
+            <Link to="/">Mətbəx mebeli</Link >
           </li>
           <li>
-            <a>Koridor mebeli</a>
+            <Link to="/">Koridor mebeli</Link >
           </li>
           <li>
-            <a>Şkaflar</a>
+            <Link  to="/">Şkaflar</Link >
           </li>
           <li>
-            <a>Yataq dəsti</a>
+            <Link  to="/">Yataq dəsti</Link >
           </li>
           <li>
-            <a>Ofis mebeli</a>
+            <Link to="/">Ofis mebeli</Link >
           </li>
           <li>
-            <a>Matraslar</a>
+            <Link to="/">Matraslar</Link >
           </li>
           <li>
-            <a>Otaq mebeli</a>
+            <Link to="/">Otaq mebeli</Link >
           </li>
           <li>
-            <a>Uşaq mebeli</a>
+            <Link to="/" >Uşaq mebeli</Link >
           </li>
           <li>
-            <a>Yumşaq mebel</a>
+            <Link to="/">Yumşaq mebel</Link >
           </li>
         </ul>
         <div className="akt-and-new">
-          <a>Aksiya</a>
-          <a>Yeni</a>
+          <Link to="/">Aksiya</Link >
+          <Link to="/">Yeni</Link >
         </div>
       </div>
       <div className="contact-section">

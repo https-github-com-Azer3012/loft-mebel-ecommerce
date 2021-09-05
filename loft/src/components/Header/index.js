@@ -1,18 +1,19 @@
 import React from "react";
 import "./styles.scss";
 import PhoneIcon from "../../assets/phone.png";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
       <ul className="nav">
         <li>
-          <a>Əsas Səhifə</a>
+          <Link to='/'>Əsas Səhifə</Link>
         </li>
         <li>
-          <a>Haqqımızda</a>
+          <Link to='/'>Haqqımızda</Link>
         </li>
         <li>
-          <a>Əlaqə</a>
+          <Link to='/'>Əlaqə</Link>
         </li>
       </ul>
       <div className="number">
